@@ -1,0 +1,224 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: rgb(47,47,47);
+    color: white;
+}
+
+/* darkmode */
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: f39c12;
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+.navbar {
+    display: flex;
+    overflow: auto;
+    height: auto;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 10px;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar_left {
+    display: flex;
+}
+
+.navbar_right {
+padding: 10px;
+}
+
+.searchbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 2px solid rgb(180, 180, 180);
+    margin: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.content {
+    text-align: center;
+    height: 400px;
+    background: grey;
+    background-image: url(image/background.jpeg);
+}
+
+.content h1, h3 {
+    padding: 30px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.content h1 {
+    margin: 10px;
+    font-size: 100px;
+}
+
+.content a {
+    margin: 30px;
+}
+
+
+
+.content a {
+    background-color: rgb(255, 217, 0);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product1, .product2 {
+    margin: 10px;
+    border: 1px solid rgb(208, 208, 208);
+    padding: 10px;
+}
+
+.product1 h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.mainphoto {
+    margin: 10px;
+}
+
+#title {
+    color: rgb(128, 197, 44);
+}
+
+.product2 h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.openinghours {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.about {
+    height: 650px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia a {
+    padding: 10px;
+}
+
+.book {
+    height: 650px;
+}
+
+.book {
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display : black;
+    visibility: hidden;
+}
+input[type="checkbox"]:cheked ~ .check:before:cheked ~ .check:before {
+    transform: translateX(-50px);
+}
+
+input[type="checkbox"]:cheked ~ .check {
+    background-color: white;
+    box-shadow: black;
+}
+
+.check:before,
+.check:after{
+    border-radius:50%;
+    content:'';
+    height: 13px;
+    position: absolute;
+    top : 3px;
+    transition: transform 0.5s ease;
+    width : 13px;
+}
+
+.check:before{
+    background-color: white;
+    left: 5px;
+}
+
+.check{
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: backgroun-color 0.5 ease-in,
+                box-shadow 0.5s ease-in;
+    width: 40px;
+}
