@@ -1,0 +1,86 @@
+body{
+    text-align: center;
+    background-color: E5EBB2;
+}
+
+.readContainer{
+    text-align: center;
+    background-color: F8C4B4;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+table th{
+    padding: 20px;
+}
+
+thead{
+    margin: 20px;
+}
+
+thead th:nth-child(1) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+  }
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: FF8787;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.readContainer a:link, a:hover, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(52, 121, 247);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#createA {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(52, 121, 247);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#createH1{
+    text-align: center;
+}
+
+.createContainer{
+    text-align: center;
+    background-color: F8C4B4;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.updateContainer{
+    background-color: F8C4B4;
+    padding: 20px;
+    border-radius: 20px;
+}
